@@ -1,0 +1,15 @@
+<form>
+  <div class="form-group row">
+    <div class="col-sm-6">
+      {{input class="form-control" placeholder="Message" value=model.message}}
+    </div>
+    <div class="col-sm-6">
+      {{input class="form-control" placeholder="Status" value=model.status}}
+    </div>
+  </div>
+
+  <p>
+    <button type="submit" class="btn btn-success" {{action "save"}}>Create</button>
+    <button class="btn btn-default" {{action "cancel"}}>Cancel</button>
+  </p>
+</form>

@@ -1,0 +1,9 @@
+<p class="pull-sm-right">
+  {{#link-to "lists.edit" model class="btn btn-sm btn-primary"}}Edit{{/link-to}}
+  <a class="btn btn-sm btn-danger" href="#" {{action "delete" model}}>Delete</a>
+</p>
+
+<h3>
+  Message: {{model.message}}
+  Status: {{model.status}}
+</h3>

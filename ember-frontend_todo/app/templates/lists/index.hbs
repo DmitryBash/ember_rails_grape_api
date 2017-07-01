@@ -1,0 +1,8 @@
+{{#link-to "lists.new" class="btn btn-primary"}} Add list{{/link-to}}
+
+<h3>Lists</h3>
+<ul>
+  {{#each model as |list|}}
+    <li>{{list.message}} and status {{list.status}}</li>
+  {{/each}}
+</ul>
